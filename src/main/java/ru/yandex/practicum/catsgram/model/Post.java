@@ -2,8 +2,6 @@ package ru.yandex.practicum.catsgram.model;
 
 import java.time.Instant;
 import lombok.Builder;
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
 
@@ -11,10 +9,10 @@ import lombok.Value;
 @Builder(toBuilder = true)
 public class Post {
 
-    String author; // автор
-    @Builder.Default
-    Instant creationDate = Instant.now(); // дата создания
-    String description; // описание
-    String photoUrl; // url-адрес фотографии
+  String author; // автор
+  @Builder.Default
+  Instant creationDate = Instant.now(); // дата создания
+  String description; // описание
+  String photoUrl; // url-адрес фотографии
 
 }
